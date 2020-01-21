@@ -1,0 +1,22 @@
+/* emmet  */
+
+p.klasse-1 {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2 px solid black;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: gold;
+}
+
+body p {
+    background-color: red;
+}
+
+body .klasse-1 {
+    background-color: blue;
+}
+
+#id-1.klasse-1 {
+    background-color: gray;
+}
