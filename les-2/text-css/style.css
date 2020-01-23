@@ -1,0 +1,37 @@
+.class-1 {
+    font-family: Sans-Serif;;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.class-2 {
+    font-family: Serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.class-3 {
+    background-color: green;
+    font-color: red;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+}
+
+.class-4 {
+    background-color: gray;
+    width: 400px;
+    border-bottom: 2px solid green;
+}
+
+.class-5 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.class-5 span {
+    color: green;
+    text-decoration: none;
+    display: inline-block;
+}

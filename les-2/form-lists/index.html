@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LES 2 FORMS EN CO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+
+    <!-- method hieronder is GET, stuurt naar # dus naar zelfde pagina. 
+        Maar betekent dat alles in de url komt te staan (niet veilig).
+        Betere methode is POST of Ajax -->
+
+    <form id="form-1" method="GET" action="#">
+        <label for="first-name">Voornaam</label>
+        <input name="first-name" id="first-name" type=text" placeholder="Voornaam">
+
+        <label>
+            Email:
+            <input name="email" type="email">
+        </label>
+
+        <label>
+            Leeftijd:
+            <input name="age" type="number">
+        </label>
+
+        <label>
+            Geboortedatum:
+            <input type="date" name="birth" value="2020-01-23">
+        </label>
+
+        <label>
+            Huisdier:
+            <input name="pet" type="checkbox" value="has-pet">
+        </label>
+            Man:
+            <input name="gender" type="radio" value="man">
+        </label>
+        <label>
+            Vrouw:
+           <input name="gender" type="radio" value="woman" checked>
+        </label>
+
+        <label>
+            Kinderen:
+            <select name="children">
+                <option value="_" disabled>Selecteer</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+        </label>
+
+        <button>Test</button>
+
+        <input type="submit" value="Verzend">
+        <!-- beter is button zoals hieronder -->
+        <button type"submit">Submit</button>
+
+    </form>
+
+    <!-- pre wordt enkel gebruikt voor code -->
+
+    <pre>
+        adsf adsfe     adsf
+        sde            znd
+    </pre>
+</html>
