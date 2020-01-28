@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.red {
+    background-color: red;
+    height: 500px;
+}
+.green {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+
+.pos-absolute {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+
+.pos-relative {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+    position: relative;
+    top: 10px;
+}
