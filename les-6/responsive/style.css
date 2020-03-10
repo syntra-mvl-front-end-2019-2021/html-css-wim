@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+header {
+    background-color: #3298dc;
+    color: white;
+}
+
+.top-header {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+.logo {
+    height: 52px;
+    padding: 12px;
+}
+
+.logo .logo-image {
+    display: block;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+}
+.nav-mobile {
+    display: none;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-bottom: 1px solid white;
+}
+
+.nav-item.active a {
+    border-color: darkblue;
+}
+
+.bottom-header {
+    text-align: center;
+    padding: 150px 0;
+    width: 1000px;
+    margin: auto;
+}
+
+.bottom-header h1 {
+    margin: 10px 0;
+}
+
+.bottom-header p {
+    margin: 5px 0;
+}
+
+.banner {
+    background-color: white;
+    padding: 22px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.banner p {
+    margin: 0;
+}
+
+.card-container {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+.card {
+    /* width: calc((100% - 48px) / 3); */
+    background-color: white;
+    flex-grow: 1;
+    margin: 12px;
+    padding: 20px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.text-banner {
+    width: 1000px;
+    margin: auto;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.grid {
+    width: 1000px;
+    margin: auto;
+}
+
+.grid-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+.grid-item p + p {
+    margin-top: 20px;
+}
+
+.grid-item .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.grid-item .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.grid-item .image {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.grid-item .image img {
+    display: block;
+    width: 100%;
+}
+
+.grid-col > .grid-item-half {
+    height: calc(50% - 10px);
+}
+
+.grid-row > .grid-item-half {
+    width: calc(50% - 10px);
+}
+
+.grid-row > .grid-item-1 {
+    width: calc((100% - 40px) / 3);
+}
+
+.grid-row > .grid-item-2 {
+    width: calc(((100% - 40px) / 3 * 2) + 20px);
+}
+
+footer {
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 800px;
+    }
+
+    .card-container {
+        width: 824px;
+    }
+    .grid-row {
+        flex-direction: column;;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid {
+        width: 600px;
+    }
+
+    .card-container {
+        width: 624px;
+    }
+    .grid-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .grid-row > .grid-item-half,
+    .grid-row > .grid-item-1,
+    .grid-row > .grid-item-2 {
+        width: 100%;
+    }
+
+    .grid-item {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .top-header,
+    .bottom-header,
+    .text-banner,
+    .grid, {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .card-container {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+        position: relative;
+    }
+    .nav-mobile .hamburger {
+        width: 30px;
+        height: 10px;
+        background-color:white;
+        color: white;
+        margin: 5px;
+    }
+}

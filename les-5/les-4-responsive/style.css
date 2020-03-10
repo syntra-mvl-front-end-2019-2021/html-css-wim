@@ -9,13 +9,14 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Roboto, sans-serif;
     background-color: lightgray;
 }
 
 header {
     background-color:#159dc6;
-    color: white;    
+    color: white;
 }
 
 .navbar {
@@ -138,6 +139,11 @@ header {
     margin: 12px;
     padding: 10px;
 }
+.tile-box-width-33 {
+    margin: 12px;
+    padding: 10px;
+    width: calc((100% - 40px) / 3);
+}
 .is-white { 
     background-color: white;
     border-radius: 8px; }
@@ -214,13 +220,16 @@ header {
 }
 
 .tile-wide {
-    flex-grow: 1;
     display: flex;
     height: 50%;
 }
 
+.footer-container {
+    width: 100%;
+}
 
 .footer {
+    width: 1344px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -233,3 +242,87 @@ header {
 .footer-category a {
     text-decoration: none;
 }
+
+
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        width: 992px;
+    }
+    .header-body {
+        width: 992px;
+    }
+    .card-container {
+        width: 992px;
+    }
+    .tile-row {
+        width: 992px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 768px;
+    }
+    .header-body {
+        width: 768px;
+    }
+    .card-container {
+        width: 768px;
+    }
+    .tile-row {
+        width: 768px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+        width: 360px;
+    }
+    .banner {
+        width: 360px;
+    }
+    .header-body {
+        width: 360px;
+    }
+    .card-container {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+    .infobox {
+        width: 90%;
+    }
+    .tile-row {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: auto;
+    }
+    .tile-box-width-33 {
+        margin: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+    .tile-wide {
+        width: 100%
+    }
+    .footer {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-category {
+        margin: 20px;
+        padding: 0;
+
+}
+
+

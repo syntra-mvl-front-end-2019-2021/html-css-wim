@@ -1,0 +1,24 @@
+/* CSS */
+
+.nav {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+}
+.nav a {
+    color: #ffffff;
+    padding-left: 3em;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+/* HTML */
+
+<div class="nav">
+	<a href="index.html">Home</a>
+	<a href="generic.html">Generic</a>
+	<a href="elements.html">Elements</a>
+</div>
+
+
